@@ -29,7 +29,7 @@ function Home() {
               return d;
             } else if (d.species.toLowerCase().includes(search.toLowerCase())) {
               return d;
-            } else null;
+            } else return null;
           })
           .map((d) => (
             <Cards key={d.id} data={d} />
