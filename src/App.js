@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import React from "react";
 import "./App.css";
 import Home from "./components/Home";
@@ -11,8 +11,8 @@ import svg2 from "./assest/wave1.svg";
 function App() {
   return (
     <div className="App">
-      <img src={svg1} className="wave" />
-      <img src={svg2} className="wave2" />
+      <img src={svg1} className="wave" alt="" />
+      <img src={svg2} className="wave2" alt="" />
       <NavBar />
       <DataContext>
         <Routes>

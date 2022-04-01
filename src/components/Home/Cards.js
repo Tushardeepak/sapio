@@ -5,7 +5,6 @@ import { useDataContext } from "../context/DataContext";
 
 function Cards({ data }) {
   const [flip, setFlip] = React.useState(false);
-  const [like, setLike] = React.useState(false);
   const { updateLikeData, updateUnlikeData } = useDataContext();
 
   return (
@@ -15,7 +14,7 @@ function Cards({ data }) {
         onClick={() => setFlip(!flip)}
       >
         <div className="homeCardFront">
-          <img src={data.image} className="homeCardImg"></img>
+          <img src={data.image} className="homeCardImg" alt=""></img>
         </div>
         <div className="homeCardBack">
           <p className="homeCardText">

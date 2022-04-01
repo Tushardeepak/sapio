@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <div className="navbarComponent">
       <div className="navbarBox">
-        <img src={logo} className="navbarLogo" />
+        <img src={logo} className="navbarLogo" alt="" />
         <div className="navbarlinksContainer">
           <p
             className={loaction.pathname === "/" ? "selected" : "navbarLinks"}
