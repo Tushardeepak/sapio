@@ -1,13 +1,28 @@
 .likepageContainer{
     width: 100%;
-    padding-top:5rem;
+    padding:5rem 0;
     display: flex;
     justify-content:center;
     align-items:center;
+    flex-direction:column;
 }
 .likepageBox{
     width:80%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minMax(15rem, 1fr));
     grid-gap: 1rem;
+}
+.searchBox{
+    height:2rem;
+    width:auto;
+    border:5px solid rgb(1, 89, 1);
+    border-radius:10px;
+    background-color:#000;
+    color:#fff;
+    padding: 0.2rem 1rem;
+    font-weight:bold;
+    outline: none;
+    margin-left: auto;
+    margin-top: -2rem;
+    margin-right:4rem;
 }
