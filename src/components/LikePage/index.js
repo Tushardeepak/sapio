@@ -29,7 +29,7 @@ function LikePage() {
               return d;
             } else if (d.species.toLowerCase().includes(search.toLowerCase())) {
               return d;
-            }
+            } else return null;
           })
           ?.map((d) => (d.liked ? <Cards key={d.id} data={d} /> : ""))}
       </div>
