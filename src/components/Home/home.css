@@ -1,0 +1,83 @@
+.homeContainer{
+    width: 100%;
+    padding-top:5rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.homeBox{
+    width:80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minMax(15rem, 1fr));
+    grid-gap: 1rem;
+}
+.homeCardBox{
+    position: relative;
+    height:15rem;
+    width:15rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition:all 0.5s ease-in-out;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform:rotateY(var(--rotate-y, 0));
+    margin-bottom:1rem;
+}
+.homeCardBox.homeCardBoxFlip{
+    --rotate-y: 180deg;
+}
+
+.homeCardBox:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.homeCardFront,.homeCardBack{    
+    position:absolute;
+    backface-visibility: hidden;
+    padding: 1rem;
+    background:#fff !important;
+    border-radius:10px;
+}
+.homeCardBack {
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    font-weight:bold;
+   
+}
+.cardMain{
+    position: relative;
+}
+.homeCardLikeBtn{
+    position:absolute;
+    top:0px;
+    z-index: 100;
+    height: 2rem !important;
+    width: 2rem !important;
+    color:rgb(156, 156, 0);
+    cursor: pointer;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius:200%;
+    transition: all 0.5s ease-in-out;
+}
+.homeCardLikeBtn:hover{
+    color:rgb(210, 210, 5);
+}
+.homeCardText span {
+  font-size: 1.2rem;
+    color: rgb(0, 78, 0);
+}
+.homeCardText{
+    padding-bottom: 0.5rem;
+}
+.homeCardImg{
+    object-fit: cover !important;
+    height:100%;
+    width:100%;
+    border-radius:10px !important;
+}
